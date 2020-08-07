@@ -1,9 +1,8 @@
-# behavior_subject_mixin
-A mixin which provides state of StateNotifier as a stream of BehaviorSubject.
+import 'dart:async';
 
-# Usage
+import 'package:behavior_subject_mixin/behavior_subject_mixin.dart';
+import 'package:state_notifier/state_notifier.dart';
 
-```dart
 class CounterNotifier extends StateNotifier<int> with BehaviorSubjectMixin {
   CounterNotifier() : super(0);
 
@@ -18,4 +17,3 @@ void main() {
   counterNotifier..increment()..increment()..increment();
   Timer.run(subscription.cancel);
 }
-```
