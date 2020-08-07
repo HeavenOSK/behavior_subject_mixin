@@ -14,6 +14,12 @@ void main() {
   final subscription = counterNotifier.stream.listen((currentState) {
     print('count is $currentState.');
   });
-  counterNotifier..increment()..increment()..increment();
+
+  // count is 0.
+
+  counterNotifier.increment(); // count is 1.
+  counterNotifier.increment(); // count is 2.
+  counterNotifier.increment(); // count is 3.
+
   Timer.run(subscription.cancel);
 }
