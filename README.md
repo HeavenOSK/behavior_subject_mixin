@@ -19,3 +19,11 @@ void main() {
   Timer.run(subscription.cancel);
 }
 ```
+
+### Output
+```
+count is 0.
+count is 1.
+count is 2.
+count is 3.
+```
