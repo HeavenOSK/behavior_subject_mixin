@@ -1,5 +1,5 @@
 name: behavior_subject_mixin
-description: A mixin which provides state of StateNotifier as a stream of BehaviorSubject.
+description: A mixin that provides the state of StateNotifier as a stream of BehaviorSubject.
 version: 0.1.0
 author: Ryunosuke Watanabe
 homepage: https://github.com/HeavenOSK/behavior_subject_mixin
