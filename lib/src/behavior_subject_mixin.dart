@@ -7,6 +7,7 @@ mixin BehaviorSubjectMixin<T> on StateNotifier<T> {
   BehaviorSubject<T> _subject;
 
   /// A stream which provides [state].
+  @override
   Stream<T> get stream {
     _subject ??= BehaviorSubject<T>.seeded(state);
     return _subject.stream;

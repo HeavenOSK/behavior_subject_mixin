@@ -1,12 +1,12 @@
 name: behavior_subject_mixin
 description: A mixin that provides the state of StateNotifier as a stream of BehaviorSubject.
-version: 0.1.1
+version: 0.2.0
 homepage: https://github.com/HeavenOSK/behavior_subject_mixin
 environment:
   sdk: '>=2.7.0 <3.0.0'
 dependencies:
   rxdart: ^0.24.1
-  state_notifier: ^0.5.0
+  state_notifier: ^0.6.0
 dev_dependencies:
   pedantic_mono:
   test: ^1.14.4
